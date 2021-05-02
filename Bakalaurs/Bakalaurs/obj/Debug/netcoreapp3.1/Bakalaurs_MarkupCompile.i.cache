@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\App.xaml
-11407045341
+21679184416
 
-6-96075262
+131293431202
 192-1533232326
-MainWindow.xaml;
+MainWindow.xaml;Views\MainMenuView.xaml;
 
-False
+True
 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Bakalaurs.Stores;
+using Bakalaurs.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +15,19 @@ namespace Bakalaurs
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            NavigationStore navigationStore = new NavigationStore();
+
+            navigationStore.CurrentViewModel = new MainMenuViewModel(navigationStore);
+
+            MainWindow = new MainWindow()
+            {
+                DataContext = new MainViewModel(navigationStore)
+            };
+            MainWindow.Show();
+
+            base.OnStartup(e);
+        }
     }
 }

@@ -17,3 +17,6 @@ C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcor
 C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcoreapp3.1\Bakalaurs.dll
 C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcoreapp3.1\Bakalaurs.pdb
 C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcoreapp3.1\Bakalaurs.genruntimeconfig.cache
+C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcoreapp3.1\Views\MainMenuView.g.cs
+C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcoreapp3.1\Views\MainMenuView.baml
