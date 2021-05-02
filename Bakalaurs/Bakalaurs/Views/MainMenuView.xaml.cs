@@ -27,7 +27,8 @@ namespace Bakalaurs.Views
 
                 FileNameLabel.Content = openFileDialog.SafeFileName;
 
-                MessageBox.Show(filePath);
+                DataLibrary dataLibrary = new DataLibrary();
+                dataLibrary.setDesignFilePath(filePath);
             }
         }
 
@@ -43,11 +44,26 @@ namespace Bakalaurs.Views
 
                     FileNameLabel.Content = filename;
 
-                    MessageBox.Show(Path.GetFullPath(files[0]));
+                    DataLibrary dataLibrary = new DataLibrary();
+                    dataLibrary.setDesignFilePath(Path.GetFullPath(files[0]));
                 } else
                 {
                     MessageBox.Show("Upload only 1 design at a time!");
                 }
+            }
+        }
+
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            DataLibrary dataLibrary = new DataLibrary();
+            string filePath = dataLibrary.getDesignFilePath();
+
+            if (!string.IsNullOrEmpty(filePath))
+            {
+                MessageBox.Show(filePath);
+            } else
+            {
+                MessageBox.Show("Please upload a design!");
             }
         }
     }
