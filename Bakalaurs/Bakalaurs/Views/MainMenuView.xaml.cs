@@ -18,6 +18,7 @@ namespace Bakalaurs.Views
         private void UploadButton_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image files (*.png;*.jpeg;*.jpg;*.bpm)|*.png;*.jpeg;*.jpg;*.bmp|All files (*.*)|*.*";
 
             bool? response = openFileDialog.ShowDialog();
 
@@ -40,12 +41,19 @@ namespace Bakalaurs.Views
 
                 if (files.Length == 1)
                 {
-                    string filename = Path.GetFileName(files[0]);
+                    if (Path.GetExtension(files[0]).ToUpperInvariant() != ".PNG" && Path.GetExtension(files[0]).ToUpperInvariant() != ".JPG" &&
+                        Path.GetExtension(files[0]).ToUpperInvariant() != ".JPEG" && Path.GetExtension(files[0]).ToUpperInvariant() != ".BMP")
+                    {
+                        MessageBox.Show("Only .png .jpg .jpeg and .bmp is supported!");
+                    } else
+                    {
+                        string filename = Path.GetFileName(files[0]);
 
-                    FileNameLabel.Content = filename;
+                        FileNameLabel.Content = filename;
 
-                    DataLibrary dataLibrary = new DataLibrary();
-                    dataLibrary.setDesignFilePath(Path.GetFullPath(files[0]));
+                        DataLibrary dataLibrary = new DataLibrary();
+                        dataLibrary.setDesignFilePath(Path.GetFullPath(files[0]));
+                    }
                 } else
                 {
                     MessageBox.Show("Upload only 1 design at a time!");
