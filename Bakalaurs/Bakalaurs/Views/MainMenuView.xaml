@@ -82,7 +82,8 @@
                     Content="Next"
                     FontFamily="Century Gothic"
                     FontSize="18"
-                    FontWeight="Bold" />
+                    FontWeight="Bold"
+                    IsEnabled="False" />
             </StackPanel>
         </DockPanel>
     </Grid>
