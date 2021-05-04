@@ -64,13 +64,5 @@ namespace Bakalaurs.Views
                 }
             }
         }
-
-        private void NextButton_Click(object sender, RoutedEventArgs e)
-        {
-            DataLibrary dataLibrary = new DataLibrary();
-            string filePath = dataLibrary.getDesignFilePath();
-
-            MessageBox.Show(filePath);
-        }
     }
 }

@@ -10,9 +10,12 @@ namespace Bakalaurs.ViewModels
 {
     class MainMenuViewModel : ViewModelBase
     {
+        public ICommand NavigateElementMenuCommand { get; set; }
         public ICommand QuitCommand { get; }
         public MainMenuViewModel(NavigationStore navigationStore)
         {
+            NavigateElementMenuCommand = new NavigateCommand<ElementMenuViewModel>(navigationStore, () => new ElementMenuViewModel(navigationStore));
+
             QuitCommand = new RelayCommand((par) => { Application.Current.Shutdown(); });
         }
     }
