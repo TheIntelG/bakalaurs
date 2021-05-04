@@ -23,5 +23,23 @@ namespace Bakalaurs
         {
             return DesignFilePath;
         }
+
+        // Element Storage
+        private static string element;
+        public static string Element
+        {
+            get { return element; }
+            set { element = value; }
+        }
+
+        public void setElement(string element)
+        {
+            Element = element;
+        }
+
+        public string getElement()
+        {
+            return Element;
+        }
     }
 }

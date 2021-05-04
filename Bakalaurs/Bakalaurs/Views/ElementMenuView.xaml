@@ -32,6 +32,37 @@
                 FontSize="24"
                 FontWeight="Bold" />
         </DockPanel>
+        <DockPanel Grid.Row="1" Grid.Column="1">
+            <StackPanel>
+                <Button
+                    Name="LoginRegisterButton"
+                    Width="250"
+                    Margin="20"
+                    Padding="0,5,0,5"
+                    Content="Login/Register"
+                    FontFamily="Century Gothic"
+                    FontSize="18"
+                    FontWeight="Bold" />
+                <Button
+                    Name="BasketButton"
+                    Width="250"
+                    Margin="20"
+                    Padding="0,5,0,5"
+                    Content="Basket"
+                    FontFamily="Century Gothic"
+                    FontSize="18"
+                    FontWeight="Bold" />
+                <Button
+                    Name="SearchButton"
+                    Width="250"
+                    Margin="20"
+                    Padding="0,5,0,5"
+                    Content="Search"
+                    FontFamily="Century Gothic"
+                    FontSize="18"
+                    FontWeight="Bold" />
+            </StackPanel>
+        </DockPanel>
         <DockPanel Grid.Row="2" Grid.Column="1">
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                 <Button
