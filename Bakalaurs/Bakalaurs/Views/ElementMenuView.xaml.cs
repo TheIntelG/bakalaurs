@@ -22,5 +22,16 @@ namespace Bakalaurs.Views
         {
             InitializeComponent();
         }
+
+        private void SaveElement(object sender, RoutedEventArgs e)
+        {
+            DataLibrary dataLibrary = new DataLibrary();
+
+            string elementName = (e.Source as Button).Content.ToString();
+
+            dataLibrary.setElement(elementName);
+
+            MessageBox.Show(dataLibrary.getElement());
+        }
     }
 }
