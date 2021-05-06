@@ -25,6 +25,7 @@ namespace Bakalaurs.Views
 
         private Point startPoint;
         private Rectangle rect;
+        private Image image;
 
         private void Canvas_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -38,6 +39,9 @@ namespace Bakalaurs.Views
 
             Canvas.SetLeft(rect, startPoint.X);
             Canvas.SetTop(rect, startPoint.Y);
+
+            Canvas.Children.Clear();
+            Canvas.Children.Add(DesignImage);
             Canvas.Children.Add(rect);
         }
 
@@ -64,6 +68,12 @@ namespace Bakalaurs.Views
         private void Canvas_MouseUp(object sender, MouseButtonEventArgs e)
         {
             rect = null;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Canvas.Children.Clear();
+            Canvas.Children.Add(DesignImage);
         }
     }
 }

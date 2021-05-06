@@ -31,6 +31,7 @@
                 MouseMove="Canvas_MouseMove"
                 MouseUp="Canvas_MouseUp">
                 <Image
+                    x:Name="DesignImage"
                     Width="{Binding Path=ActualWidth, ElementName=Canvas}"
                     Height="{Binding Path=ActualHeight, ElementName=Canvas}"
                     Source="{Binding CanvasImage}"
@@ -52,6 +53,7 @@
                     Width="100"
                     Margin="20"
                     Padding="0,5,0,5"
+                    Click="Button_Click"
                     Content="Reset"
                     FontFamily="Century Gothic"
                     FontSize="18"
