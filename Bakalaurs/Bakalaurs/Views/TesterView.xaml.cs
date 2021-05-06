@@ -70,10 +70,20 @@ namespace Bakalaurs.Views
             rect = null;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Reset_Click(object sender, RoutedEventArgs e)
         {
             Canvas.Children.Clear();
             Canvas.Children.Add(DesignImage);
+        }
+
+        private void Test_Click(object sender, RoutedEventArgs e)
+        {
+            DataLibrary dataLibrary = new DataLibrary();
+            string element = dataLibrary.getElement();
+
+            double x = 0;
+            double y = 0;
+            MessageBox.Show("Element: " + element + "\nTop Left Coordinates: (" + x + ";" + y + ")");
         }
     }
 }
