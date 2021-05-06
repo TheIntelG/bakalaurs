@@ -18,6 +18,14 @@
             <RowDefinition />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
+        <DockPanel
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Width="1280"
+            Height="720">
+            <Image Source="{Binding CanvasImage}" />
+        </DockPanel>
         <DockPanel Grid.Row="1" Grid.Column="1">
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                 <Button
