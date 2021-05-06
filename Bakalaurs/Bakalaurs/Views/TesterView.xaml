@@ -24,7 +24,18 @@
             Grid.ColumnSpan="3"
             Width="1280"
             Height="720">
-            <Image Source="{Binding CanvasImage}" />
+            <Canvas
+                x:Name="Canvas"
+                Background="Transparent"
+                MouseDown="Canvas_MouseDown"
+                MouseMove="Canvas_MouseMove"
+                MouseUp="Canvas_MouseUp">
+                <Image
+                    Width="{Binding Path=ActualWidth, ElementName=Canvas}"
+                    Height="{Binding Path=ActualHeight, ElementName=Canvas}"
+                    Source="{Binding CanvasImage}"
+                    Stretch="UniformToFill" />
+            </Canvas>
         </DockPanel>
         <DockPanel Grid.Row="1" Grid.Column="1">
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">

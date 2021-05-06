@@ -22,5 +22,48 @@ namespace Bakalaurs.Views
         {
             InitializeComponent();
         }
+
+        private Point startPoint;
+        private Rectangle rect;
+
+        private void Canvas_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            startPoint = e.GetPosition(Canvas);
+
+            rect = new Rectangle
+            {
+                Stroke = Brushes.Red,
+                StrokeThickness = 2
+            };
+
+            Canvas.SetLeft(rect, startPoint.X);
+            Canvas.SetTop(rect, startPoint.Y);
+            Canvas.Children.Add(rect);
+        }
+
+        private void Canvas_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Released || rect == null)
+                return;
+
+            var pos = e.GetPosition(Canvas);
+
+            var x = Math.Min(pos.X, startPoint.X);
+            var y = Math.Min(pos.Y, startPoint.Y);
+
+            var w = Math.Max(pos.X, startPoint.X) - x;
+            var h = Math.Max(pos.Y, startPoint.Y) - y;
+
+            rect.Width = w;
+            rect.Height = h;
+
+            Canvas.SetLeft(rect, x);
+            Canvas.SetTop(rect, y);
+        }
+
+        private void Canvas_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            rect = null;
+        }
     }
 }
