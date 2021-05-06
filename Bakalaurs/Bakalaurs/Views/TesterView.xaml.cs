@@ -14,22 +14,13 @@ using System.Windows.Shapes;
 namespace Bakalaurs.Views
 {
     /// <summary>
-    /// Interaction logic for ElementMenuView.xaml
+    /// Interaction logic for TesterView.xaml
     /// </summary>
-    public partial class ElementMenuView : UserControl
+    public partial class TesterView : UserControl
     {
-        public ElementMenuView()
+        public TesterView()
         {
             InitializeComponent();
-        }
-
-        private void SaveElement(object sender, RoutedEventArgs e)
-        {
-            DataLibrary dataLibrary = new DataLibrary();
-
-            string elementName = (e.Source as Button).Content.ToString();
-
-            dataLibrary.setElement(elementName);
         }
     }
 }

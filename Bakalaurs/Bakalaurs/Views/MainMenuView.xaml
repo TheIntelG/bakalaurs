@@ -5,8 +5,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Bakalaurs.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    d:DesignHeight="720"
-    d:DesignWidth="1280"
+    d:DesignHeight="900"
+    d:DesignWidth="1600"
     mc:Ignorable="d">
     <Grid Background="White">
         <Grid.ColumnDefinitions>

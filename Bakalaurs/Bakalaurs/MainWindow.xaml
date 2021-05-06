@@ -8,8 +8,8 @@
     xmlns:viewmodels="clr-namespace:Bakalaurs.ViewModels"
     xmlns:views="clr-namespace:Bakalaurs.Views"
     Title="Element Tester"
-    Width="1280"
-    Height="720"
+    Width="1600"
+    Height="900"
     mc:Ignorable="d">
     <ContentControl Content="{Binding CurrentViewModel}">
         <ContentControl.Resources>
@@ -18,6 +18,9 @@
             </DataTemplate>
             <DataTemplate DataType="{x:Type viewmodels:ElementMenuViewModel}">
                 <views:ElementMenuView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:TesterViewModel}">
+                <views:TesterView />
             </DataTemplate>
         </ContentControl.Resources>
     </ContentControl>
