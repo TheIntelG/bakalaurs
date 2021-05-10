@@ -1,0 +1,5 @@
+C:\Users\Rihards\Desktop\Bakalaurs\Bakalaurs.exe
+C:\Users\Rihards\Desktop\Bakalaurs\Bakalaurs.dll
+C:\Users\Rihards\Desktop\Bakalaurs\Bakalaurs.deps.json
+C:\Users\Rihards\Desktop\Bakalaurs\Bakalaurs.runtimeconfig.json
+C:\Users\Rihards\Desktop\Bakalaurs\Bakalaurs.pdb

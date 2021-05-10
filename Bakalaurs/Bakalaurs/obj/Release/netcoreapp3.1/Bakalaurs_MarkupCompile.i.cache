@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcoreapp3.1\
+C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Release\netcoreapp3.1\
 Bakalaurs
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\App.xaml
 4-1915774702
 
-18-249471655
+18-1594010581
 192-1533232326
 MainWindow.xaml;Views\ElementMenuView.xaml;Views\MainMenuView.xaml;Views\TesterView.xaml;
 
