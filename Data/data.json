@@ -1,0 +1,89 @@
+[
+  {
+    "Name": "Login/Register",
+    "Vertices": [
+      {
+        "Location": "Top-Left",
+        "X": 50,
+        "Y": 55,
+        "ReactionTime": 2.85
+      },
+      {
+        "Location": "Top-Right",
+        "X": 1240,
+        "Y": 55,
+        "ReactionTime": 2.32
+      },
+      {
+        "Location": "Bottom-Left",
+        "X": 50,
+        "Y": 690,
+        "ReactionTime": 7.41
+      },
+      {
+        "Location": "Bottom-Right",
+        "X": 1240,
+        "Y": 690,
+        "ReactionTime": 5.43
+      }
+    ]
+  },
+  {
+    "Name": "Search",
+    "Vertices": [
+      {
+        "Location": "Top-Left",
+        "X": 50,
+        "Y": 55,
+        "ReactionTime": 2.48
+      },
+      {
+        "Location": "Top-Right",
+        "X": 1230,
+        "Y": 55,
+        "ReactionTime": 3.06
+      },
+      {
+        "Location": "Bottom-Left",
+        "X": 50,
+        "Y": 695,
+        "ReactionTime": 3.94
+      },
+      {
+        "Location": "Bottom-Right",
+        "X": 1230,
+        "Y": 695,
+        "ReactionTime": 5.52
+      }
+    ]
+  },
+  {
+    "Name": "Basket",
+    "Vertices": [
+      {
+        "Location": "Top-Left",
+        "X": 75,
+        "Y": 50,
+        "ReactionTime": 5.55
+      },
+      {
+        "Location": "Top-Right",
+        "X": 1235,
+        "Y": 50,
+        "ReactionTime": 3.34
+      },
+      {
+        "Location": "Bottom-Left",
+        "X": 75,
+        "Y": 690,
+        "ReactionTime": 7.16
+      },
+      {
+        "Location": "Bottom-Right",
+        "X": 1235,
+        "Y": 690,
+        "ReactionTime": 6.65
+      }
+    ]
+  }
+]

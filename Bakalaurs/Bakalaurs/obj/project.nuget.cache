@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TrS4vl37dqxF9Cv53Y/3EL2fV5+EgeuGlahx4AMW7MJljcRQcpOo3+KEdEDT0pd0Dnxhz1bIZlR7TFlTYbsW9g==",
+  "dgSpecHash": "LdnTB9i39WFrlj77XxLIGGuSTOSDKbHERmPrnoT8hyftbshciksZbG2S65O5CoODgUeBBOKRzr4lkSjc1q7bQA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rihards\\Desktop\\Projects\\Bakalaurs\\Bakalaurs\\Bakalaurs\\Bakalaurs.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Rihards\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

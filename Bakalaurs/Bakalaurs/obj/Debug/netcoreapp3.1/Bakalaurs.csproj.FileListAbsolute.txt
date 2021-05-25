@@ -24,3 +24,5 @@ C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcor
 C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcoreapp3.1\Views\ElementMenuView.baml
 C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcoreapp3.1\Views\TesterView.g.cs
 C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcoreapp3.1\Views\TesterView.baml
+C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Rihards\Desktop\Projects\Bakalaurs\Bakalaurs\Bakalaurs\obj\Debug\netcoreapp3.1\Bakalaurs.csproj.CopyComplete

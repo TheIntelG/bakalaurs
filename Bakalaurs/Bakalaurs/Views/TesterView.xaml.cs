@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bakalaurs.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -13,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace Bakalaurs.Views
 {
-    /// <summary>
-    /// Interaction logic for TesterView.xaml
-    /// </summary>
     public partial class TesterView : UserControl
     {
         public TesterView()
@@ -25,7 +23,7 @@ namespace Bakalaurs.Views
 
         private Point startPoint;
         private Rectangle rect;
-        private Image image;
+        private Rectangle memoryRect;
 
         private void Canvas_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -67,6 +65,7 @@ namespace Bakalaurs.Views
 
         private void Canvas_MouseUp(object sender, MouseButtonEventArgs e)
         {
+            memoryRect = rect;
             rect = null;
         }
 
@@ -74,6 +73,7 @@ namespace Bakalaurs.Views
         {
             Canvas.Children.Clear();
             Canvas.Children.Add(DesignImage);
+            memoryRect = null;
         }
 
         private void Test_Click(object sender, RoutedEventArgs e)
@@ -81,9 +81,28 @@ namespace Bakalaurs.Views
             DataLibrary dataLibrary = new DataLibrary();
             string element = dataLibrary.getElement();
 
-            double x = 0;
-            double y = 0;
-            MessageBox.Show("Element: " + element + "\nTop Left Coordinates: (" + x + ";" + y + ")");
+            ElementData elementData = new ElementData();
+            List<Element> elements = new List<Element>();
+            elements = elementData.ReadElementDataFile();
+
+            double predictedTime;
+            List<Vertice> vertices = new List<Vertice>();
+            foreach(Element elem in elements)
+            {
+                if (elem.Name == element) vertices = elem.Vertices;
+            }
+            predictedTime = dataLibrary.calculateLocationTime(vertices, memoryRect, Canvas);
+
+            if (memoryRect == null)
+            {
+                MessageBox.Show("Please highlight " + element + "!");
+            }
+            else
+            {
+                int x = (int)Canvas.GetLeft(memoryRect);
+                int y = (int)Canvas.GetTop(memoryRect);
+                MessageBox.Show("Element: " + element + "\nTop Left Coordinates: (" + x + ";" + y + ")\nExpected reaction time: " + predictedTime + "s");
+            }
         }
     }
 }
